@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script  src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    
+    <script src="./coding.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Api Call</title>
+</head>
+<body class="container">
+    <h2>Recpie API</h2>
+    
+    
+    
+
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modelId">
+      ADD RECEPIE
+    </button>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+          </div>
+          <div class="modal-body">
+           <div class="form-group">
+      <label for="title">Title</label>
+      <input type="text"
+        class="form-control" name="title" id="title" aria-describedby="helpId" placeholder="Enter title of Recpie">
+      <small id="Idhelp" class="form-text text-muted">Enter Title of Recpie</small>
+    </div>
+    <div class="form-group">
+      <label for="body">Body</label>
+      <input type="text"
+        class="form-control" name="body" id="body" aria-describedby="helpId" placeholder="Enter Body Details">
+      <small id="Bodyhelp" class="form-text text-muted">Enter Details of Body</small>
+    </div>
+          </div>
+          <div class="modal-footer">
+            <button id="btn" class="btn btn-info btn-lg">ADD RECPIE</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="divs">
+        loading...
+    </div>
+
+    <!-- Button trigger modal -->
+    <!-- <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modelId"> -->
+      <!-- Launch -->
+    <!-- </button> -->
+    
+    <!-- Modal -->
+    <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                  
+                    <h5 class="modal-title">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                </div>
+                <div class="modal-body">
+                  <input type="hidden" id="idup">
+                  <div class="form-group">
+                    <label for="titleup">Title</label>
+                    <input type="text"
+                      class="form-control" name="titleup" id="titleup" aria-describedby="helpId" placeholder="">
+                    
+                  </div>
+                   <div class="form-group">
+                     <label for="bodyup">Body</label>
+                     <textarea class="form-control" name="bodyup" id="bodyup" rows="3"></textarea>
+                   </div>
+
+
+                  
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" id="updatebtn" class="btn btn-primary">SaveUpdate</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
