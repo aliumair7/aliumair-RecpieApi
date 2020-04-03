@@ -17,7 +17,7 @@ $(function (){
             data:{title,body},
             success:function(response) {
                 loader();
-                $("#modelid").modal("hide");
+                $("#modelId").modal("hide");
         
             }
         })
@@ -65,14 +65,13 @@ $.ajax({
     url:"https://usman-recipes.herokuapp.com/api/recipes",
     method:"POST",
     data:{title,body},
-    error: $("#divs").text("Eror Data not loading!!!"),
    success: function (response) {
        console.log(response);
-       $("#title").val("");
-        $("#body").val("")
+       
         loader();
-        
-        $("#modelId").modal("hide")
+        $("#title").val("");
+        $("#body").val("")
+        $("#modelid").modal("hide")
     }
 
 })
