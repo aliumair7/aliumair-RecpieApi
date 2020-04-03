@@ -17,7 +17,7 @@ $(function (){
             data:{title,body},
             success:function(response) {
                 loader();
-                $("#modelId").modal("hide");
+                $("#modelid").modal("hide");
         
             }
         })
