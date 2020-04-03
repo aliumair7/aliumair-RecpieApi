@@ -1,0 +1,2 @@
+# aliumair-RecpieApi
+ API DATA FETCHING THROUGH JQUERY
